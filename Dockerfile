@@ -8,11 +8,6 @@ RUN apt-get update && \
 # Set the working directory to /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html
 
-# Remove existing files
-RUN rm -rf ./*
-
-# Clone the private repository using the personal access token
-RUN git clone https://github.com/Yash3148/Animated-Login-page.git .
 
 # Expose port 80 to allow external access
 EXPOSE 80
